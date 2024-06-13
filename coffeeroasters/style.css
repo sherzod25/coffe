@@ -12,7 +12,7 @@
 .container {
     padding-left: 80px;
     padding-right: 80px;
-    width: 1440px;
+    width: 85%;
     margin: 0 auto;
     background-color: rgba(254, 252, 247, 1);
 }
@@ -22,6 +22,14 @@ nav {
     z-index: 3;
     background-color: #fff;
     background-color: rgba(254, 252, 247, 1);
+}
+
+.nav>button{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    background: transparent;
+    display: none;
 }
 
 .nav {
@@ -413,4 +421,29 @@ nav {
 .oval3{
     margin-bottom: -20px;
     margin-left: 340px;
+}
+
+@media only screen and (max-width:576px){
+    .container{
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .links{
+        display: none;
+    }
+
+    .nav>button{
+        display: inline-block;
+    }
+
+    .collection-card{
+        width: 100%;
+    }
+
+
 }
